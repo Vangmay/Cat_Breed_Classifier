@@ -1,4 +1,6 @@
 Dropzone.autoDiscover = false;
+pred = document.querySelector('.pred')
+
 
 function init() {
     let dz = new Dropzone("#dropzone", {
@@ -21,10 +23,11 @@ function init() {
         $.post(url, {
             image_data: imageData
         },function(data,status){
-            console.log(data)
+            pred.innerHTML = data;
         });
     });
     $('#submitBtn').on('click',function(e){
         dz.processQueue()
     });
 }
+init()
