@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat_Breed_Classifier</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+    </style>
+</head>
+<body>
+
+<div class="header">wow i am div</div>
+<div class="container">
+    <div class="app">
+        <div class="paragraph" id="elm"><p>Hello,you might be wondering what is this. Right? Well this is just a little neural network project that I made, its called the cat breed classifier and can sucessfully classifiy the breed of a cat based on the image provided, the neural network is successful in recongnizing upto 52 breeds</p></div>
+       
+        <div class="input" id="elm">
+            <form action="/file-upload" class="dropzone" id = 'dropzone' >
+                
+                <div class="dz-message" data-dz-message><span><img src="./upload.svg" alt="click here to upload your image"></span></div>
+                
+            </form>
+            <button id="submitBtn">Submit</button>
+        </div>
+
+        <div class="results" id="elm"><h4 class="pred">Upload a photo in the dropbox,then wait for sometime and the results will be displayed.</h4></div>
+        
+        
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./dropzone.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
